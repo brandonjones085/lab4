@@ -9,6 +9,12 @@ University::University()
     people = 0;
 }
 
+University::University(int b, int p)
+{
+    buildings = b;
+    people = p;
+}
+
 void University::printBuildingInfo()
 {
     std::cout << "Building info " << buildings << std::endl;

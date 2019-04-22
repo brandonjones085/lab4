@@ -11,4 +11,5 @@ class Building : public University
 
   public:
     Building();
+    Building(std::string, std::string, int);
 };

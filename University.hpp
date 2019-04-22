@@ -1,5 +1,7 @@
 #include <string>
 
+//one student, one instructor, 2 buildings
+
 class University
 {
   protected:
@@ -9,7 +11,7 @@ class University
 
   public:
     University();
-
+    University(int, int);
     void printBuildingInfo();
     void printPeopleInfo();
 };

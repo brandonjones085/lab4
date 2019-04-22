@@ -1,11 +1,12 @@
 
 #include <string>
 
-class Person
+class Person : public University
 {
   protected:
     std::string personName;
     int personAge;
 
   public:
+    void doWork();
 };
