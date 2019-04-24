@@ -4,6 +4,8 @@
 
 class Instructor : public Person
 {
+  protected:
+    double rating;
 };
 
 #endif

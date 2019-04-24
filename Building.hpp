@@ -1,10 +1,9 @@
-#include "University.hpp"
 
 #include <string>
 
-class Building : public University
+class Building
 {
-  protected:
+  private:
     std::string buildingName;
     std::string address;
     int size;
@@ -12,4 +11,7 @@ class Building : public University
   public:
     Building();
     Building(std::string, std::string, int);
+    void getBuildingName();
+    void getAddress();
+    void getSize();
 };

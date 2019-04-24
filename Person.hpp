@@ -1,7 +1,7 @@
 
 #include <string>
 
-class Person : public University
+class Person
 {
   protected:
     std::string personName;

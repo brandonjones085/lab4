@@ -1,16 +1,28 @@
 #include <iostream>
 #include "University.hpp"
 #include "menu.hpp"
+#include "Person.hpp"
+#include "Building.hpp"
 
 int main()
 {
+    Building *b = new Building("Adress One", "One", 1000);
+    Building *b2 = new Building("Address Two", "Two", 2000);
+    Building *b3 = new Building("Address Three", "Three", 3000);
+
+    University u;
+    u.addBuilding(b);
+    u.addBuilding(b2);
+    u.addBuilding(b3);
+
     std::cout << "Welcome to Oregon State University" << std::endl;
     int menuOption = menu();
     while (menuOption != 4)
     {
         if (menuOption == 1)
         {
-            std::cout << "Prints info about buildings";
+            std::cout << "Prints info about buildings\n";
+            u.printBuildingInfo();
         }
         else if (menuOption == 2)
         {
