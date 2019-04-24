@@ -4,8 +4,11 @@
 
 class Instructor : public Person
 {
-  protected:
+  private:
     double rating;
+
+  public:
+    virtual void doWork();
 };
 
 #endif

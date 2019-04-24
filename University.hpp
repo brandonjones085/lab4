@@ -1,7 +1,11 @@
+#ifndef UNIVERSITY_HPP
+#define UNIVERSITY_HPP
+
 #include <string>
 #include <vector>
 #include "Building.hpp"
 #include "Person.hpp"
+#include "Student.hpp"
 
 //one student, one instructor, 2 buildings
 
@@ -20,5 +24,7 @@ class University
     void printBuildingInfo();
     void printPeopleInfo();
     void addBuilding(Building *b);
-    void addPerson();
+    void addPerson(Person *p);
 };
+
+#endif

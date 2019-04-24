@@ -1,3 +1,5 @@
+#ifndef PERSON_HPP
+#define PERSON_HPP
 
 #include <string>
 
@@ -10,7 +12,11 @@ class Person
   public:
     Person();
     Person(std::string, int);
+    virtual ~Person();
     virtual void doWork();
-    void printName();
-    void printAge();
+    virtual void printName();
+    std::string getName();
+    int printAge();
 };
+
+#endif

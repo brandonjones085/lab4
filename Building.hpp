@@ -1,3 +1,5 @@
+#ifndef BUILDING_HPP
+#define BUILDING_HPP
 
 #include <string>
 
@@ -15,3 +17,5 @@ class Building
     void getAddress();
     void getSize();
 };
+
+#endif

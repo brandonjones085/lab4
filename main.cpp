@@ -9,10 +9,16 @@ int main()
     Building *b2 = new Building("Address Two", "Two", 2000);
     Building *b3 = new Building("Address Three", "Three", 3000);
 
+    Person *p = new Student("Finn", 18, 4.0);
+    Person *p1 = new Student("Daphne", 15, 3.0);
+
     University u;
     u.addBuilding(b);
     u.addBuilding(b2);
     u.addBuilding(b3);
+
+    u.addPerson(p);
+    u.addPerson(p1);
 
     std::cout << "Welcome to Oregon State University" << std::endl;
     int menuOption = menu();

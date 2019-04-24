@@ -5,19 +5,31 @@ Person::Person()
 {
     this->personName = " ";
     this->personAge = 0;
-};
+}
+
 Person::Person(std::string name, int age)
 {
     this->personName = name;
     this->personAge = age;
-};
+}
 
-//virtual void doWork();
+Person::~Person()
+{
+}
+
+std::string Person::getName()
+{
+    return personName;
+}
+
+int Person::printAge()
+{
+    return personAge;
+}
+
 void Person::printName()
 {
-    std::cout << "Person name: " << personName << std::endl;
-};
-void Person::printAge()
-{
-    std::cout << "Person age: " << personAge << std::endl;
-};
+    std::cout << "Name: " << personName << std::endl;
+}
+
+void Person::doWork() {}

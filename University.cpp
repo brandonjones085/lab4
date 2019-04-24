@@ -15,6 +15,7 @@ University::University(int b, int p)
     people = p;
 }
 
+//Source: http://www.cplusplus.com/reference/vector/vector/begin/
 void University::printBuildingInfo()
 {
     std::cout << " Building info " << buildings << std::endl;
@@ -29,6 +30,7 @@ void University::printBuildingInfo()
     }
 }
 
+//Source: http://www.cplusplus.com/reference/vector/vector/begin/
 void University::printPeopleInfo()
 {
     std::cout << "People info " << people << std::endl;
@@ -38,7 +40,6 @@ void University::printPeopleInfo()
     for (it = personVector.begin(); it != personVector.end(); it++, i++)
     {
         personVector.at(i)->printName();
-        personVector.at(i)->printAge();
     }
 }
 
@@ -47,6 +48,7 @@ void University::addBuilding(Building *b)
     buildingVector.push_back(b);
 }
 
-void University::addPerson()
+void University::addPerson(Person *p)
 {
+    personVector.push_back(p);
 }
