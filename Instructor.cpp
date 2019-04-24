@@ -1,39 +1,39 @@
 #include "Instructor.hpp"
 #include <iostream>
 
-Student::Student()
+Instructor::Instructor()
 {
     this->personName = " ";
     this->personAge = 0;
-    this->GPA = 0;
+    this->rating = 0;
     srand(time(NULL));
 }
 
-Student::Student(std::string name, int age, double gpa)
+Instructor::Instructor(std::string name, int age, double gpa)
     : Person(name, age)
 {
     this->personName = name;
     this->personAge = age;
-    this->GPA = gpa;
+    this->rating = gpa;
     srand(time(NULL));
 }
 
-void Student::doWork()
+void Instructor::doWork()
 {
     std::cout << getName() << " did " << getRandNum() << std::endl;
 }
 
-void Student::setRandNum()
+void Instructor::setRandNum()
 {
     randNum = std::rand() % 40 + 1;
 }
 
-int Student::getRandNum()
+int Instructor::getRandNum()
 {
     return randNum;
 }
 
-void Student::printName()
+void Instructor::printName()
 {
-    std::cout << "Name: " << personName << std::endl;
+    std::cout << "Name: " << personName << " From instructor class" << std::endl;
 }

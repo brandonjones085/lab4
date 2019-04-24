@@ -35,5 +35,5 @@ int Student::getRandNum()
 
 void Student::printName()
 {
-    std::cout << "Name: " << personName << std::endl;
+    std::cout << "Name: " << personName << "from the student class" << std::endl;
 }

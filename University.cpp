@@ -28,6 +28,10 @@ void University::printBuildingInfo()
         buildingVector.at(i)->getBuildingName();
         buildingVector.at(i)->getSize();
     }
+
+    std::cin.ignore();
+    std::cin.clear();
+    std::cin.sync();
 }
 
 //Source: http://www.cplusplus.com/reference/vector/vector/begin/
@@ -41,6 +45,9 @@ void University::printPeopleInfo()
     {
         personVector.at(i)->printName();
     }
+    std::cin.ignore();
+    std::cin.clear();
+    std::cin.sync();
 }
 
 void University::addBuilding(Building *b)

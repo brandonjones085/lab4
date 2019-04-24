@@ -12,7 +12,7 @@ class Person
   public:
     Person();
     Person(std::string, int);
-    virtual ~Person();
+    //virtual ~Person();
     virtual void doWork();
     virtual void printName();
     std::string getName();

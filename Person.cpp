@@ -13,10 +13,6 @@ Person::Person(std::string name, int age)
     this->personAge = age;
 }
 
-Person::~Person()
-{
-}
-
 std::string Person::getName()
 {
     return personName;

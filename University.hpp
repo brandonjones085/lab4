@@ -6,6 +6,7 @@
 #include "Building.hpp"
 #include "Person.hpp"
 #include "Student.hpp"
+#include "Instructor.hpp"
 
 //one student, one instructor, 2 buildings
 
