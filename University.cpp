@@ -17,7 +17,7 @@ University::University(int b, int p)
 
 void University::printBuildingInfo()
 {
-    std::cout << "Building info " << buildings << std::endl;
+    std::cout << " Building info " << buildings << std::endl;
 
     std::vector<Building *>::iterator it;
     int i = 0;
@@ -32,6 +32,14 @@ void University::printBuildingInfo()
 void University::printPeopleInfo()
 {
     std::cout << "People info " << people << std::endl;
+
+    std::vector<Person *>::iterator it;
+    int i = 0;
+    for (it = personVector.begin(); it != personVector.end(); it++, i++)
+    {
+        personVector.at(i)->printName();
+        personVector.at(i)->printAge();
+    }
 }
 
 void University::addBuilding(Building *b)

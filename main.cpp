@@ -1,11 +1,10 @@
 #include <iostream>
 #include "University.hpp"
 #include "menu.hpp"
-#include "Person.hpp"
-#include "Building.hpp"
 
 int main()
 {
+
     Building *b = new Building("Adress One", "One", 1000);
     Building *b2 = new Building("Address Two", "Two", 2000);
     Building *b3 = new Building("Address Three", "Three", 3000);
@@ -27,6 +26,7 @@ int main()
         else if (menuOption == 2)
         {
             std::cout << "Prints information about people at university";
+            u.printPeopleInfo();
         }
         else if (menuOption == 3)
         {

@@ -8,5 +8,9 @@ class Person
     int personAge;
 
   public:
-    void doWork();
+    Person();
+    Person(std::string, int);
+    virtual void doWork();
+    void printName();
+    void printAge();
 };
