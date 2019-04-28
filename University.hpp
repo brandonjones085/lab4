@@ -33,6 +33,7 @@ class University
     void addBuilding(Building *b);
     void addPerson(Person *p);
     void printWork();
+    void validateInt(int &);
 };
 
 #endif

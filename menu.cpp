@@ -6,6 +6,7 @@ The int returned determines how the program will run.
 *******************************************************************************/
 
 #include "menu.hpp"
+#include "validateInt.hpp"
 #include <iostream>
 
 int menu()
@@ -17,6 +18,9 @@ int menu()
     std::cout << "Enter 4 to exit the program " << std::endl;
     std::cout << std::endl;
     std::cin >> choice;
+
+    //makes sure the number is between 1 and 4
+    validateInt(choice);
 
     return choice;
 }

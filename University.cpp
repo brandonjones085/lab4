@@ -42,6 +42,7 @@ void University::printWork()
         std::cout << std::endl;
     }
     std::cin >> num;
+    validateInt(num);
     personVector.at(num - 1)->doWork();
 
     std::cin.ignore();
@@ -56,8 +57,6 @@ and size of all the buildings in the building vector
 *******************************************************************************/
 void University::printBuildingInfo()
 {
-    std::cout << " Building info " << buildings << std::endl;
-
     std::vector<Building *>::iterator it;
     int i = 0;
     for (it = buildingVector.begin(); it != buildingVector.end(); it++, i++)
@@ -112,4 +111,20 @@ void University::addBuilding(Building *b)
 void University::addPerson(Person *p)
 {
     personVector.push_back(p);
+}
+
+/******************************************************************************* 
+** Description:  The function takes a reference to an int and validates 
+that it is a valid input. 
+*******************************************************************************/
+
+void University::validateInt(int &i)
+{
+    while (!std::cin)
+    {
+        std::cin.clear();
+        std::cin.sync();
+        std::cout << "\nInvalid input! Try again: ";
+        std::cin >> i;
+    }
 }
