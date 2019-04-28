@@ -1,3 +1,10 @@
+/******************************************************************************* 
+** Author:       Brandon Jones
+** Date:         04/24/2019
+** Description:  The menu function asks a user a choice and returns an int. 
+The int returned determines how the program will run.
+*******************************************************************************/
+
 #include "menu.hpp"
 #include <iostream>
 

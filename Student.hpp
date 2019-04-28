@@ -1,3 +1,9 @@
+/******************************************************************************* 
+** Author:       Brandon Jones
+** Date:         04/24/2019
+** Description:  The header file for the Student class
+*******************************************************************************/
+
 #ifndef STUDENT_HPP
 #define STUDENT_HPP
 
@@ -15,8 +21,8 @@ class Student : public Person
     Student(std::string, int, double);
     virtual void doWork();
     virtual void printName();
-    void setRandNum();
-    int getRandNum();
+    virtual void printNum();
+    virtual void printAge();
 };
 
 #endif

@@ -1,6 +1,13 @@
+/******************************************************************************* 
+** Author:       Brandon Jones
+** Date:         04/24/2019
+** Description:  The Student class inherits from the Person class
+*******************************************************************************/
+
 #include "Student.hpp"
 #include <iostream>
 
+//CONSTRUCTOR
 Student::Student()
 {
     this->personName = " ";
@@ -18,22 +25,35 @@ Student::Student(std::string name, int age, double gpa)
     srand(time(NULL));
 }
 
+/******************************************************************************* 
+** Description:  The function returns the name of the student and a random 
+number between 1 and 40
+*******************************************************************************/
 void Student::doWork()
 {
-    std::cout << getName() << " did " << getRandNum() << std::endl;
+    std::cout << getName() << " did " << getRandNum() << " hours of homework" << std::endl;
 }
 
-void Student::setRandNum()
-{
-    randNum = std::rand() % 40 + 1;
-}
-
-int Student::getRandNum()
-{
-    return randNum;
-}
-
+/******************************************************************************* 
+** Description:  The function prints the name of the student
+*******************************************************************************/
 void Student::printName()
 {
-    std::cout << "Name: " << personName << "from the student class" << std::endl;
+    std::cout << "Name: " << personName << std::endl;
+}
+
+/******************************************************************************* 
+** Description:  The function prints the age of the student
+*******************************************************************************/
+void Student::printAge()
+{
+    std::cout << "Age: " << personAge << std::endl;
+}
+
+/******************************************************************************* 
+** Description:  The function prints the GPA of student
+*******************************************************************************/
+void Student::printNum()
+{
+    std::cout << "GPA: " << GPA << std::endl;
 }

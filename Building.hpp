@@ -1,3 +1,9 @@
+/******************************************************************************* 
+** Author:       Brandon Jones
+** Date:         04/24/2019
+** Description:  The header file for the building class
+*******************************************************************************/
+
 #ifndef BUILDING_HPP
 #define BUILDING_HPP
 

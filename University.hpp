@@ -1,3 +1,9 @@
+/******************************************************************************* 
+** Author:       Brandon Jones
+** Date:         04/24/2019
+** Description:  The header file for the University class
+*******************************************************************************/
+
 #ifndef UNIVERSITY_HPP
 #define UNIVERSITY_HPP
 
@@ -26,6 +32,7 @@ class University
     void printPeopleInfo();
     void addBuilding(Building *b);
     void addPerson(Person *p);
+    void printWork();
 };
 
 #endif
